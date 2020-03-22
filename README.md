@@ -123,6 +123,12 @@ qemu-system-x86_64 \
 
   ![](www/images/12_feature_server_snap.png)
 
+* Reboot
+
+  ![](www/images/13_reboot.png)
+
+  ![](www/images/14_reboot.enter.png)
+
 ## Reboot without Ubuntu ISO attached
 
 ```
