@@ -4,7 +4,7 @@ Reference from:
 
 1) https://graspingtech.com/ubuntu-desktop-18.04-virtual-machine-macos-qemu/
 2) https://hackmd.io/7xPAsXfcRKijdc8h4Y-Qog?view&fbclid=IwAR1JLeLstDB__BFX_Vf5f-sQn5lhlgS32Bd1YXO-A_G9tg0uotCwtbL4VWg
-
+3) https://blog.programster.org/qemu-img-cheatsheet
 
 ## Install QEMU
 
@@ -159,3 +159,31 @@ Usage
 ```
 ./run.sh
 ```
+
+## Snapshots
+
+Create snapshots
+
+```
+qemu-img snapshot -c init ubuntu-desktop-18.04.qcow2
+```
+
+Restore (apply) snapshot
+
+```
+qemu-img snapshot -a init ubuntu-desktop-18.04.qcow2
+```
+
+Delete snapshot
+
+```
+qemu-img snapshot -d init ubuntu-desktop-18.04.qcow2
+```
+
+List snapshots
+
+```
+qemu-img snapshot -l ubuntu-desktop-18.04.qcow2
+```
+
+
